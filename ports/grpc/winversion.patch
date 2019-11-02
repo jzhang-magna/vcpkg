@@ -1,0 +1,14 @@
+diff --git a/include/grpc/impl/codegen/port_platform.h b/include/grpc/impl/codegen/port_platform.h
+index c0ca9f4..5fb2f1e 100644
+--- a/include/grpc/impl/codegen/port_platform.h
++++ b/include/grpc/impl/codegen/port_platform.h
+@@ -39,6 +39,9 @@
+ #define NOMINMAX
+ #endif /* NOMINMAX */
+ 
++
++#define _WIN32_WINNT 0x0A00
++
+ #ifndef _WIN32_WINNT
+ #error \
+     "Please compile grpc with _WIN32_WINNT of at least 0x600 (aka Windows Vista)"
